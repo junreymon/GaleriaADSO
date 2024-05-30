@@ -1,0 +1,57 @@
+
+/* ENCABEZADO DE LA PAGINA */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    width: 100%;
+}
+
+#header .titulo-header {
+    font-size: 2.5em;
+}
+
+
+
+/* CONTENIDO DE LA PAGINA */
+
+#contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    margin-bottom: 20px;
+}
+
+.contenido-informacion {
+    width: 100%;
+    height: 100%;
+}
+
+.contenido-informacion .informacion p {
+    font-size: 1.2em;
+    text-align: justify;
+    padding: 20px 60px 60px 60px;
+}
+
+.contenido-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    margin: 0 auto;
+}
+
+.contenido-galeria .box-img {
+    width: 380px;
+    transition: .5s;
+}
+.contenido-galeria .box-img:hover {
+    scale: 1.02;
+    cursor: pointer;
+}
+
+.contenido-galeria .box-img img {
+    border-radius: 10px;
+}
